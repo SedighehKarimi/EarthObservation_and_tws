@@ -1,0 +1,5 @@
+
+.ipynb_checkpoints
+.ipynb_checkpoints/Tutorial_kiana-checkpoint.ipynb
+echo ".ipynb_checkpoints/" >> .gitignore
+.ipynb_checkpoints/
