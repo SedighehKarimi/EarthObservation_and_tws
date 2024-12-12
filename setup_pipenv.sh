@@ -15,8 +15,12 @@ if [ -d "$envname" ]; then
     
 else
     echo "$envname creating new pip environment, this can take a while"
-    python -m venv $envname
+    python -m venv $envname --system-site-packages
+     # upgrade pip before installing shxarray (may fail in building the wheel otherwise)
+    echo "upgrading pip"
+    ${envname}/bin/pip install --upgrade pip
     #install required software
+    echo "installing shxarray"
     ${envname}/bin/pip install -r $scriptpath/requirements.txt
 fi
 
