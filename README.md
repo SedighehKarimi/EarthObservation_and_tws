@@ -11,22 +11,25 @@ In order to make this virtual environment available for you when creating notebo
 
 1. From the Jupyter interface open a terminal File-> New -> Terminal
 
-![crib_terminal.png](attachments/crib_terminal.png)
+ ![crib_terminal.png](attachments/crib_terminal.png)
 
 2. Clone the reposiotry
-```sh
-git clone git@github.com:SedighehKarimi/EarthObservation_and_tws.git
-```
+  ```sh
+ git clone git@github.com:SedighehKarimi/EarthObservation_and_tws.git
+ ```
 
 3. In the terminal window, navigate to the shared folder
-```sh
-cd shared/Hydrological-and-Environmental-Cycles-2024-1B/TerrestrialWaterStorage
-```
+
+  ```sh
+ cd shared/Hydrological-and-Environmental-Cycles-2024-1B/TerrestrialWaterStorage
+ ```
 
 <!-- #endregion -->
 
 <!-- #region -->
-#### Activate the virtual environment
+
+### Activate the virtual environment
+
 Activate the prepared Python virtual environment to enable the necessary libraries:
 ```sh
 source pysh_aarch64/bin/activate
@@ -37,7 +40,9 @@ You will see the virtual environment name in your terminal prompt, indicating it
 <!-- #endregion -->
 
 <!-- #region -->
-#### Start the Tutorial
+
+### Start the Tutorial
+
 Now, navigate to the cloned repository and open the first tutorial:
 
 1. Navivate to your cloned repository
@@ -64,18 +69,21 @@ shared/Hydrological-and-Environmental-Cycles-2024-1B/data
 
 The folder structure includes:
 
-`monthly_solutions`: Monthly GRACE solutions.
-`monthly_background`: Background model files.
-`monthly_n96`: Processed GRACE solutions.
-`static`: Supporting static gravity files.
+* `monthly_solutions`: Monthly GRACE solutions.
+
+* `monthly_background`: Background model files.
+
+* `monthly_n96`: Processed GRACE solutions.
+
+* `static`: Supporting static gravity files.
 
 These datasets are critical for analyzing terrestrial water storage.
 
 #### Basin Data
 The basin data files (e.g., AMAZONAS.gpkg, GREENLAND.gpkg) are already included in the cloned repository under:
-```sh
+ ```sh
 EarthObservation_and_tws/data/basins
-```
+ ```
 
 The folder folder structure for this tutorial is
 
